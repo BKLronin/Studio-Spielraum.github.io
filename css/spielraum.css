@@ -13,13 +13,11 @@
 @keyframes wurf3 {
     from {transform: translate(-200px, 300px) rotateZ(-45deg); opacity: 0;}
     to {transform: translate(0px, 0px) rotateZ(0deg); opacity: 1; }  
-}      
-
+}
 @keyframes blend {
     from {opacity: 0;}
     to {opacity: 1;}
 }
-
 @keyframes blend-half {
     from {opacity: 0.8;}
     to {opacity: 1;}
@@ -29,17 +27,27 @@
             animation-duration: 1s; 
             margin: auto;
             position: relative;
-            padding-top: 5%;
+            padding-top: 2%;
             padding-bottom:2%;}
 
+        .lead{animation-name: blend-half; 
+            animation-duration: 2s; 
+            margin: auto;
+            position: relative;
+            padding-top: 0%;
+            padding-bottom:1%;
+            text-align: center;
+            margin-bottom: 2%;}
+            
+                  
 .spielkarte{box-shadow:0 5px 20px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
-            padding-top:60px;
+            padding-top:40px;
             padding-right:20px;
             padding-bottom:0px;
             padding-left:20px;
             border-radius:15px;
-            height:400px;
-            width: 250px;
+            height:300px;
+            width: 175px;
             margin-left: 0px;
             margin-right: 0px;
             margin-bottom:40px; 
@@ -47,15 +55,15 @@
             background-image: url("/img/card.svg"); 
             background-position: center; 
             background-repeat: no-repeat; 
-}
-            
-        
+}          
 
 .karte1{animation-name: wurf1; animation-duration: 1s; animation-timing-function: cubic-bezier(0.005, 1.055, 0.245, 1.010);animation-fill-mode: both;animation-delay:1s  ; }
 .karte2{animation-name: wurf2; animation-duration: 1.1s; animation-timing-function: cubic-bezier(0.005, 1.055, 0.245, 1.010);animation-fill-mode: both;animation-delay:2s  ; }
 .karte3{animation-name: wurf3; animation-duration: 0.9s; animation-timing-function: cubic-bezier(0.005, 1.055, 0.245, 1.010);animation-fill-mode: both;animation-delay:3s  ; }
 
-h1{text-align: center; font-family: Garamond, 'Times New Roman', Times, serif; font-size: 28px; font-style: normal; font-variant: small-caps; font-weight: 10;}
+h1{text-align: center; font-family: Optima, 'Times New Roman', Times, serif; font-size: 22px; font-style: normal; font-variant: none; font-weight: 10;}
+h2{text-align: center; font-family: Optima, 'Times New Roman', Times, serif; font-size: 18px; font-style: normal; font-variant: none; font-weight: 10;}
+
 p{text-align: justify;}
 
 .grid-container-header{
@@ -65,12 +73,18 @@ p{text-align: justify;}
     padding: 10px;
 }
 
+.grid-container-lead{
+    display: grid;        
+    grid-template-columns: 60% ;
+    justify-content: center;    
+    padding: 10px;
+}
+
 .grid-container{
     display: grid;
     column-gap: 20px;    
-    grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
-    justify-content: center;   
-    
+    grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
+    justify-content: center;       
 }
 
 .text-block {
