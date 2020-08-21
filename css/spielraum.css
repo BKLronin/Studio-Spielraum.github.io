@@ -28,7 +28,9 @@
             margin: auto;
             position: relative;
             padding-top: 2%;
-            padding-bottom:2%;}
+            padding-bottom:1%;
+            width:40%
+    }
 
         .lead{animation-name: blend-half; 
             animation-duration: 2s; 
@@ -37,8 +39,8 @@
             padding-top: 0%;
             padding-bottom:1%;
             text-align: center;
-            margin-bottom: 2%;}
-            
+            margin-bottom: 2%;
+}            
                   
 .spielkarte{box-shadow:0 5px 20px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
             padding-top:40px;
